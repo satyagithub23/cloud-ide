@@ -15,7 +15,7 @@ const app = express()
 
 app.use(express.json());
 
-const allowedOrigins = ['https://www.automateandlearn.site', 'https://automateandlearn.site', 'http://localhost:*'];
+const allowedOrigins = ['https://www.automateandlearn.fun', 'https://automateandlearn.fun', 'http://localhost:*'];
 
 app.use(cors({
     origin: allowedOrigins
@@ -137,7 +137,7 @@ app.post('/browse', async (req, res) => {
             ${htmlContent}
                 <script src="/socket.io/socket.io.js"></script>
                 <script>
-                    const socket = io('https://dockermanager.automateandlearn.site', {
+                    const socket = io('https://dockermanager.automateandlearn.fun', {
                         extraHeaders: {
                             port: ${port}
                         }
