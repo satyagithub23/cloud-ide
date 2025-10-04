@@ -137,7 +137,7 @@ app.post('/browse', async (req, res) => {
             ${htmlContent}
                 <script src="/socket.io/socket.io.js"></script>
                 <script>
-                    const socket = io('https://dockermanager.automateandlearn.fun', {
+                    const socket = io('https://automateandlearn.fun/dockermanager', {
                         extraHeaders: {
                             port: ${port}
                         }
